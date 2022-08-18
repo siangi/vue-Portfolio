@@ -1,0 +1,13 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --background-light: #ffffff;
+  --text-dark: #293029;
+  --text-light: #f6fbfc;
+  --accent2: #00916e;
+  --accent: #2041ad;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
