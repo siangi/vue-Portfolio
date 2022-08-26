@@ -8,26 +8,27 @@ export default {
     return {
       projects: [
         {
+          id: 0,
           title: "fonts and cards",
-          id: "font-and-cards",
+          elementId: "font-and-cards",
           liveLink: "https://siangi.github.io/fonts-and-cards/",
           detailLink: "/",
         },
-        {
+        { id: 1,
           title: "colors and animations",
-          id: "colors-and-animations",
+          elementId: "colors-and-animations",
           liveLink: "https://siangi.github.io/colors-and-animations/",
           detailLink: "/",
         },
-        {
+        { id: 2,
           title: "responsive design",
-          id: "responsive-design",
+          elementId: "responsive-design",
           liveLink: "https://siangi.github.io/responsive-design/",
           detailLink: "/",
         },
-        {
+        { id: 3,
           title: "design-with-frameworks",
-          id: "responsive-design",
+          elementId: "responsive-design",
           liveLink: "https://siangi.github.io/designing-with-frameworks/",
           detailLink: "/",
         },
