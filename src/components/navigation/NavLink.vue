@@ -1,10 +1,10 @@
 <script setup>
 import { RouterLink } from "vue-router";
-defineProps(["route", "title"]);
+const props = defineProps(["linkid", "route", "title"]);
 </script>
 
 <template>
   <li>
-    <RouterLink class="up-arrow" :to="route">{{ title }}</RouterLink>
+    <RouterLink class="up-arrow" :to="props.route" :id="props.linkid">{{ props.title }}</RouterLink>
   </li>
 </template>

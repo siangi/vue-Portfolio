@@ -23,7 +23,7 @@ const textEnd = {
 <template>
   <MainHeader></MainHeader>
   <NavBar></NavBar>
-  <TextSection v-bind="textStart"></TextSection>
+  <TextSection v-bind="textStart" id="introduction"></TextSection>
   <ProjectsList></ProjectsList>
-  <TextSection v-bind="textEnd"></TextSection>
+  <TextSection v-bind="textEnd" id="outroduction"></TextSection>
 </template>

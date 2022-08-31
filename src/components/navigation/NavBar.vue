@@ -1,10 +1,14 @@
 <script setup>
+import { onMounted } from "vue";
+import {gsap } from "gsap"
 import NavLink from "./NavLink.vue";
+
 
 const navLinks = [
   {
     title: "home",
     route: "/",
+    linkid: "home-link"
   },
   {
     title: "about",
@@ -15,6 +19,20 @@ const navLinks = [
     route: "/home#projects",
   },
 ];
+onMounted(() => fadeHomeLink)
+
+function fadeHomeLink() {
+      gsap.to("#home-link", {
+          opacity: 1,
+          scrollTrigger: {
+              trigger: "#introduction",
+              scrub: true,
+              start: "top center",
+              end: "top top",
+          },
+      });
+}
+
 </script>
 
 <template>
