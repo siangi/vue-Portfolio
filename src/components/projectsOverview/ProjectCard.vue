@@ -1,12 +1,12 @@
 <script>
 export default {
-  props: ["id", "elementId", "title", "liveLink", "detailLink"],
+  props: ["id", "elementId", "title", "liveLink", "thumbnailUrl"],
 };
 </script>
 
 <template>
-  <article :id="this.elementId">
-    <div class="article-graphic"></div>
+  <article>
+    <div class="article-graphic" :style="`background-image: url('${this.thumbnailUrl}')`"></div>
     <div class="article-info">
       <h3 class="article-title">{{ this.title }}</h3>
       <div class="forwarding-links">

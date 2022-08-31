@@ -327,28 +327,7 @@ article:nth-child(2n):hover {
   justify-content: space-between;
 }
 
-#font-and-cards .article-graphic {
-  background-image: url("images/fonts-and-cards/fontsCard.png");
-  background-size: cover;
-  background-position: center;
-}
-
-#colors-and-animations .article-graphic {
-  background-image: url("images/colors-and-animations/colorAnim3.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-#responsive-design .article-graphic {
-  background-image: url("images/responsive-design/responsiveSmall1.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-#design-with-frameworks .article-graphic {
-  background-image: url("images/design-with-frameworks/FrameworkCombined.png");
+.article-graphic {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

@@ -1,10 +1,6 @@
 <script>
 export default {
   props: ["title", "paragraph"],
-  created() {
-    console.log(this.title);
-    console.log(this.paragraph);
-  },
 };
 </script>
 

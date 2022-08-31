@@ -3,7 +3,6 @@ import MainHeader from "../components/MainHeader.vue";
 import NavBar from "../components/navigation/NavBar.vue";
 import ProjectsList from "../components/projectsOverview/ProjectsList.vue";
 import TextSection from "../components/TextSection.vue";
-import { createClient } from "contentful";
 </script>
 
 <script>
@@ -26,20 +25,7 @@ export default {
       },
     };
   },
-  created: function () {
-    let client = createClient({
-      space: "jfbiriazkehh",
-      accessToken: "PJ2rc9wfcHt-OqFmTWgRF5usmXx7_8u3qAJ2cbWDdbI",
-    });
-    client
-      .getEntries({
-        content_type: "portfolioProjects",
-      })
-      .then((entries) => {
-        console.log(entries);
-        this.contents = entries.items;
-      });
-  },
+  
 };
 </script>
 
