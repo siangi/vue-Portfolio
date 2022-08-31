@@ -1,12 +1,8 @@
-
 <script setup>
-  import ProjectCard from "./ProjectCard.vue";
-  import useProjectStore from "@/stores/projectStore";
+import ProjectCard from "./ProjectCard.vue";
+import useProjectStore from "@/stores/projectStore";
 
-  const store = useProjectStore();
-  console.log(store.projectData.projects.length);
-  console.log(store.projectData.projects);
-
+const store = useProjectStore();
 </script>
 
 <template>
@@ -16,6 +12,7 @@
       <ProjectCard
         v-for="(project, index) in store.projectData.projects"
         v-bind="project"
+        :id="index"
         :key="index"
       ></ProjectCard>
     </div>
