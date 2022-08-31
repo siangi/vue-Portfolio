@@ -1,12 +1,10 @@
-<script>
-export default {
-  props: ["title", "paragraph"],
-};
+<script setup>
+defineProps(["title", "paragraph"]);
 </script>
 
 <template>
   <section class="title-and-paragraph" id="introduction">
-    <h2>{{ this.title }}</h2>
-    <p>{{ this.paragraph }}</p>
+    <h2>{{ title }}</h2>
+    <p>{{ paragraph }}</p>
   </section>
 </template>

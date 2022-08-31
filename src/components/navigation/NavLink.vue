@@ -1,10 +1,6 @@
 <script setup>
 import { RouterLink } from "vue-router";
-</script>
-<script>
-export default {
-  props: ["route", "title"],
-};
+defineProps(["route", "title"]);
 </script>
 
 <template>

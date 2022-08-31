@@ -4,8 +4,8 @@ import SmallHeader from "../components/SmallHeader.vue";
 
 <script>
 export default {
-props: ["id"],
-  data() {    
+  props: ["id"],
+  data() {
     return {
       titles: [
         "title numero 0",

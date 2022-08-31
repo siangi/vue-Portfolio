@@ -1,28 +1,20 @@
 <script setup>
 import NavLink from "./NavLink.vue";
-</script>
 
-<script>
-export default {
-  data() {
-    return {
-      navLinks: [
-        {
-          title: "home",
-          route: "/",
-        },
-        {
-          title: "about",
-          route: "/about",
-        },
-        {
-          title: "projects",
-          route: "/home#projects",
-        },
-      ],
-    };
+const navLinks = [
+  {
+    title: "home",
+    route: "/",
   },
-};
+  {
+    title: "about",
+    route: "/about",
+  },
+  {
+    title: "projects",
+    route: "/home#projects",
+  },
+];
 </script>
 
 <template>
