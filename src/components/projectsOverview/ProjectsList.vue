@@ -1,52 +1,11 @@
+
 <script setup>
-import { reactive } from "vue";
-import ProjectCard from "./ProjectCard.vue";
-import { createClient } from "contentful";
+  import ProjectCard from "./ProjectCard.vue";
+  import useProjectStore from "@/stores/projectStore";
 
-const state = reactive({projects: []})
-
-
-function cleanProjectsArray(contentfulData) {
-  let result = [];
-  contentfulData.items.forEach((projectItem, index) => {
-    let cleanProject = {
-      id: index,
-      title: projectItem.fields.title,
-      thumbnailUrl: projectItem.fields.thumbnail.fields.file.url,
-      documentationEntries: [],
-      liveLink: projectItem.fields.liveLink,
-    };
-    projectItem.fields.documentationEntries.forEach((docItem) => {
-      let cleanDoc = {
-        isImage: docItem.fields.isImage,
-        textTitle: docItem.fields.textTitle,
-        imageUrl: docItem.fields.imageContent?.fields.file.url,
-        textContent: docItem.fields.textContent?.content[0].content.value,
-        positioning: docItem.fields.positioning,
-      };
-      cleanProject.documentationEntries.push(cleanDoc);
-    });
-
-    result.push(cleanProject);
-  });
-  return result;
-}
-
-
-let client = createClient({
-  space: "jfbiriazkehh",
-  accessToken: "PJ2rc9wfcHt-OqFmTWgRF5usmXx7_8u3qAJ2cbWDdbI",
-});
-
-client
-  .getEntries({
-    content_type: "portfolioProjects",
-  })
-  .then((entries) => {
-    state.projects = cleanProjectsArray(entries);
-    console.log(state.projects)
-  });
-
+  const store = useProjectStore();
+  console.log(store.projectData.projects.length);
+  console.log(store.projectData.projects);
 
 </script>
 
@@ -55,7 +14,7 @@ client
     <h2>Projects</h2>
     <div class="project-content">
       <ProjectCard
-        v-for="(project, index) in state.projects"
+        v-for="(project, index) in store.projectData.projects"
         v-bind="project"
         :key="index"
       ></ProjectCard>
