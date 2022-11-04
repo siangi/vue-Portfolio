@@ -6,17 +6,17 @@ import NavLink from "./NavLink.vue";
 
 const navLinks = [
   {
-    title: "home",
+    title: "Home",
     route: "/",
     linkid: "home-link"
   },
   {
-    title: "about",
+    title: "About",
     route: "/about",
   },
   {
-    title: "projects",
-    route: "/home#projects",
+    title: "Projekte",
+    route: "/home",
   },
 ];
 onMounted(() => fadeHomeLink)

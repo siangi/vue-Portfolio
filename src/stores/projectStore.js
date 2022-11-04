@@ -41,7 +41,7 @@ await client
     content_type: "portfolioProjects",
   })
   .then((entries) => {
-    localData.projects = cleanProjectsArray(entries);
+    localData.projects = cleanProjectsArray(entries).reverse();
   });
 
 const useProjectsStore = defineStore("projects", () => {

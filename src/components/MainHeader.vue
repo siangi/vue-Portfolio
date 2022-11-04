@@ -30,7 +30,7 @@ console.log("start")
   }
 
   function navbarLinkArrows() {
-      let target = document.querySelector("a[href='/home#projects']");
+      let target = document.querySelector("#home-link");
       gsap.to(target, {
           onCompleteParams: [target],
           onComplete: (param) => {
