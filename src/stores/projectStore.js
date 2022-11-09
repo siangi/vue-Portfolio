@@ -36,17 +36,31 @@ let client = createClient({
   accessToken: "PJ2rc9wfcHt-OqFmTWgRF5usmXx7_8u3qAJ2cbWDdbI",
 });
 
-await client
+
+client
   .getEntries({
     content_type: "portfolioProjects",
   })
   .then((entries) => {
-    localData.projects = cleanProjectsArray(entries).reverse();
+    const store = useProjectsStore()
+    store.setProjectData(cleanProjectsArray(entries).reverse());
+    console.log(store.projects);
+    console.log("check")
   });
 
-const useProjectsStore = defineStore("projects", () => {
-  const projectData = ref(localData);
-  return { projectData };
+
+const useProjectsStore = defineStore("projects", {
+  state: () => ({
+    projects: []
+  }),
+  actions: {
+    setProjectData(newData) {
+      this.projects = newData;
+    }
+  }  
 });
+
+
+
 
 export default useProjectsStore;
