@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
+import AboutView from "../views/AboutView.vue";
+import ProjectDetailView from "../views/ProjectDetailView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -12,17 +14,15 @@ const router = createRouter({
     {
       path: "/about",
       name: "about",
-      // route level code-splitting
-
-      component: () => import("../views/AboutView.vue"),
+      component: AboutView,
     },
     {
       path: "/detail/:id",
       name: "detail",
-      component: () => import("../views/ProjectDetailView.vue"),
+      component: ProjectDetailView,
       props: true,
     },
   ],
-});
+}); 
 
 export default router;

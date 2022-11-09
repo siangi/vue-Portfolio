@@ -5,8 +5,8 @@ import useProjectStore from "@/stores/projectStore";
 const props = defineProps(["id"]);
 
 const store = useProjectStore();
-const project = store.projectData.projects[props.id];
-console.log(project);
+const project = store.projects[props.id];
+// console.log(project.documentationEntries)
 </script>
 
 <template>

@@ -38,7 +38,7 @@ console.log("start")
               param.classList.toggle("down-arrow");
           },
           scrollTrigger: {
-              trigger: "#projects",
+              trigger: ".project-content",
               start: "top 25%",
               end: "top top",
               toggleActions: "play restart restart none",
