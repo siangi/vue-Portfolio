@@ -5,6 +5,6 @@ const props = defineProps(["linkid", "route", "title"]);
 
 <template>
   <li>
-    <RouterLink class="up-arrow" :to="props.route" :id="props.linkid">{{ props.title }}</RouterLink>
+    <router-link class="up-arrow" :to="props.route" :id="props.linkid">{{ props.title }}</router-link>
   </li>
 </template>
