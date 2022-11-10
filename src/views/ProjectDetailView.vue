@@ -6,7 +6,7 @@ const props = defineProps(["id"]);
 
 const store = useProjectStore();
 const project = store.projects[props.id];
-// console.log(project.documentationEntries)
+
 </script>
 
 <template>

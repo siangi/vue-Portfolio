@@ -3,7 +3,7 @@ import ProjectCard from "./ProjectCard.vue";
 import useProjectStore from "@/stores/projectStore";
 
 const store = useProjectStore();
-console.log(store.projects);
+console.log("projectList", store.projects);
 </script>
 
 <template>
