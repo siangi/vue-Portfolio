@@ -1,4 +1,9 @@
 [[redirects]]
-  from = "/*"
+  from = "/"
   to = "/"
+  status = 200
+
+[[redirects]]
+  from = "/about"
+  to = "/about"
   status = 200
