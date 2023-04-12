@@ -2,6 +2,9 @@
 import { onMounted } from "vue";
 import {gsap } from "gsap"
 import NavLink from "./NavLink.vue";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+  gsap.registerPlugin(ScrollTrigger);
 
 
 const navLinks = [
@@ -19,7 +22,10 @@ const navLinks = [
     route: "/home",
   },
 ];
-onMounted(() => fadeHomeLink)
+onMounted(() => {
+  fadeHomeLink() 
+  navbarLinkArrows();
+})
 
 function fadeHomeLink() {
       gsap.to("#home-link", {
@@ -32,6 +38,24 @@ function fadeHomeLink() {
           },
       });
 }
+
+function navbarLinkArrows() {
+      let target = document.querySelector("#home-link");
+      gsap.to(target, {
+          onCompleteParams: [target],
+          onComplete: (param) => {
+              param.classList.toggle("up-arrow");
+              param.classList.toggle("down-arrow");
+          },
+          scrollTrigger: {
+              trigger: ".project-content",
+              start: "top 25%",
+              end: "top top",
+              toggleActions: "play restart restart none",
+          },
+          duration: 0.1,
+      });
+  }
 
 </script>
 

@@ -11,7 +11,7 @@ const textStart = {
 };
 const textEnd = {
   title: `Interesse geweckt?`,
-  paragraph: (`Dann besprechen wir, wie wir zusammenarbeiten können. Kontaktieren Sie mich auf LinkedIn oder unter simon-gisler@gmx.ch`),
+  paragraph: `Besprechen wir, wie wir zusammenarbeiten können. Kontaktieren Sie mich unter simon-gisler@gmx.ch`,
 };
 </script>
 
