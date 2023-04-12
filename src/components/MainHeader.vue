@@ -3,13 +3,12 @@
   import { ScrollTrigger } from "gsap/ScrollTrigger";
   import { onMounted } from "vue";
 
-console.log("start")
   gsap.registerPlugin(ScrollTrigger);
 
   onMounted(() => {
       headerFadeIn();
-      navbarLinkArrows();
-      articleImagesScaling();
+    //   navbarLinkArrows();
+    //   articleImagesScaling();
       randomMoveBalls();
   });
 
@@ -118,8 +117,6 @@ console.log("start")
     <div class="name-title">
       <h1 class="left show">SIMON</h1>
       <h1 class="right show">GISLER</h1>
-      <h1 class="left hidden">FRONTEND</h1>
-      <h1 class="right hidden">PROGRAMMER</h1>
     </div>
     <h3>Design for Developers Portfolio</h3>
   </header>

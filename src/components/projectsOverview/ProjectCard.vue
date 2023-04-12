@@ -1,6 +1,5 @@
 <script setup>
 defineProps(["id", "elementId", "title", "liveLink", "thumbnailUrl"]);
-// console.log(title)
 </script>
 
 <template>

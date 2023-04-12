@@ -4,7 +4,8 @@ import AboutView from "../views/AboutView.vue";
 import ProjectDetailView from "../views/ProjectDetailView.vue";
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(),
+  base: import.meta.env.BASE_URL,
   routes: [
     {
       path: "/",

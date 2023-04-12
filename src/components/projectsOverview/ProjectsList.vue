@@ -1,9 +1,11 @@
 <script setup>
 import ProjectCard from "./ProjectCard.vue";
+import {storeToRefs} from "pinia"
 import useProjectStore from "@/stores/projectStore";
+// import computed from "vue";
 
-const store = useProjectStore();
-console.log("projectList", store.projects);
+const store = useProjectStore()
+// const localProjects = computed(() => store.projects)
 </script>
 
 <template>
@@ -11,11 +13,11 @@ console.log("projectList", store.projects);
     <h2>Projects</h2>
     <div class="project-content">
       <ProjectCard
-        v-for="(project, index) in store.projects"
+        v-for="(project) in store.projects"
         ref="store"
         v-bind="project"
-        :id="index"
-        :key="index"
+        :id="project.id"
+        :key="project.id"
       ></ProjectCard>
     </div>
   </section>

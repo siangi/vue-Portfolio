@@ -1,8 +1,7 @@
 import { defineStore } from "pinia";
 import { createClient } from "contentful";
-import { ref } from "vue";
 
-const localData = { projects: [] };
+
 
 function cleanProjectsArray(contentfulData) {
   let result = [];
@@ -31,6 +30,18 @@ function cleanProjectsArray(contentfulData) {
   return result;
 }
 
+const useProjectsStore = defineStore("projectStore", {
+  state: () => ({
+    projects: []
+  }),
+  actions: {
+    setProjectData(newData) {
+      this.projects = newData;
+    }
+  }  
+});
+
+
 let client = createClient({
   space: "jfbiriazkehh",
   accessToken: "PJ2rc9wfcHt-OqFmTWgRF5usmXx7_8u3qAJ2cbWDdbI",
@@ -43,24 +54,8 @@ client
   })
   .then((entries) => {
     const store = useProjectsStore()
-    store.setProjectData(cleanProjectsArray(entries).reverse());
-    console.log(store.projects);
-    console.log("check")
+    store.setProjectData(cleanProjectsArray(entries));    
+    console.log(store.projects)
   });
-
-
-const useProjectsStore = defineStore("projects", {
-  state: () => ({
-    projects: []
-  }),
-  actions: {
-    setProjectData(newData) {
-      this.projects = newData;
-    }
-  }  
-});
-
-
-
 
 export default useProjectsStore;
