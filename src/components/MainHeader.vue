@@ -118,7 +118,7 @@
       <h1 class="left show">SIMON</h1>
       <h1 class="right show">GISLER</h1>
     </div>
-    <h3>Design for Developers Portfolio</h3>
+    <h3>Frontend Developer</h3>
   </header>
 </template>
 

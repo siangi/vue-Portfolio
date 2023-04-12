@@ -5,18 +5,13 @@ import ProjectsList from "../components/projectsOverview/ProjectsList.vue";
 import TextSection from "../components/TextSection.vue";
 
 const textStart = {
-  title: "Introduction",
-  paragraph: `Four Assignments, five interesting Webpages, because this one is too. Look
-        through them to witness my skills as a web designer and developer. Most of
-        the time you will not witness both of those at the same time, this
-        portfolio is a good view of both though.`,
+
+  paragraph: `Noch Student bei der Hochschule Luzern, bald für bei Ihnen als Frontend Entwickler beschäftigt. 
+    Erkunden sie die Highlights meiner sechs Semester bei Digital Ideation!`,
 };
 const textEnd = {
-  title: `Conclusion`,
-  paragraph: `I liked this theme. The color theory part was more helpful than anything I
-        learned about that before. Overall the clear guidelines were very cool and
-        the working and theory was well balanced out. I had never really done the
-        “observing design” before, so that is a cool new method.`,
+  title: `Interesse geweckt?`,
+  paragraph: (`Dann besprechen wir, wie wir zusammenarbeiten können. Kontaktieren Sie mich auf LinkedIn oder unter simon-gisler@gmx.ch`),
 };
 </script>
 
