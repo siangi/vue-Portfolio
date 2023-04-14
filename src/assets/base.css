@@ -4,7 +4,7 @@
   --text-dark: #293029;
   --text-light: #f6fbfc;
   --accent2: #00916e;
-  --accent: #2041ad;
+  --accent: rgb(32, 64, 172);
 }
 
 * {
