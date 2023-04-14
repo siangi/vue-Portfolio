@@ -6,6 +6,7 @@ html {
 
 body {
   overflow-x: hidden;
+  background-color: var(--background-light);
 }
 
 @media screen and (min-width: 768px) {
@@ -117,6 +118,10 @@ nav li {
   nav {
       padding-left: 5%;
       padding-right: 5%;
+  }
+
+  header{
+    height: 75vh;
   }
 }
 
@@ -240,7 +245,7 @@ section {
   margin-top: 4rem;
   font-size: 1.777rem;
   line-height: 3.5rem;
-  max-width: 50ch;
+  max-width: 70ch;
 }
 
 @media screen and (max-width: 768px) {

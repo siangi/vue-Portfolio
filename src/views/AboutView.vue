@@ -34,49 +34,7 @@ import SmallHeader from '../components/SmallHeader.vue';
       class="grid-right"
       alt="Portrait von Simon Gisler im Profil"
     />
-    <div class="grid-left">
-      <h3>Ausbildung</h3>
-      <ul>
-        <li>
-          <p>Informatiker Applikationsentwicklung EFZ <br/>
-          Von 2015 - 2019 bei der Autocomp AG Reussbühl
-          </p>
-          
-        </li>
-        <li>
-          <p>Bachelor in Informatik, Studiengang Digital Ideation <br/>
-          Von 2020 - 2023 bei der Hochschule Luzern
-          Fokus auf Web Development und User Experience  
-          </p>
-        </li>
-      </ul>
-    </div>
-    <div class="grid-right">
-      <h3>Programmierkenntnisse</h3>
-      <ul>
-        <li>
-          <p>HTML, CSS, JS</p>
-        </li>
-        <li>
-          <p>React</p>
-        </li>
-        <li>
-          <p>Vue</p>
-        </li>
-        <li>
-          <p>Python</p>
-        </li>
-        <li>
-          <p>Delphi</p>
-        </li>
-        <li>
-          <p>SQL</p>
-        </li>
-        <li>
-          <p>C#</p>
-        </li>
-      </ul>
-    </div>
+
 
   </section>
 
