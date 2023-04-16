@@ -6,7 +6,7 @@ import TextSection from "../components/TextSection.vue";
 
 const textStart = {
 
-  paragraph: `Noch Student bei der Hochschule Luzern, bald für bei Ihnen als Frontend Entwickler beschäftigt. 
+  paragraph: `Noch Student bei der Hochschule Luzern, bald bei Ihnen als Frontend Entwickler beschäftigt. 
     Erkunden sie die Highlights meiner sechs Semester bei Digital Ideation!`,
 };
 const textEnd = {
