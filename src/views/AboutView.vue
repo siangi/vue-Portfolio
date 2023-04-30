@@ -34,8 +34,6 @@ import SmallHeader from '../components/SmallHeader.vue';
       class="grid-right"
       alt="Portrait von Simon Gisler im Profil"
     />
-
-
   </section>
 
 </template>

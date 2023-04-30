@@ -16,10 +16,12 @@ const navLinks = [
   {
     title: "About",
     route: "/about",
+    classes: "right-arrow"
   },
   {
     title: "Projekte",
     route: "/home",
+    classes: "down-arrow",
   },
 ];
 onMounted(() => {
